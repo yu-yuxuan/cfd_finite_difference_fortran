@@ -8,7 +8,7 @@ In my spare time, I studied the web course below and based on the course content
 
 * CONCEPT
 The only thing is to solve the Navier-Stokes equations.
-$\frac{\partial \vec{v}}{\partial t}+(\vec{v}\cdot\nabla)\vec{v}=-\frac{1}{\rho}\nabla p + \nu \nabla^2\vec{v}$
+\(\frac{\partial \vec{v}}{\partial t}+(\vec{v}\cdot\nabla)\vec{v}=-\frac{1}{\rho}\nabla p + \nu \nabla^2\vec{v}\)
 The details can be obtained both from the open course and any CFD books.
 
 * USAGE
