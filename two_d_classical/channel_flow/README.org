@@ -1,0 +1,21 @@
+#+TITLE: solve channel flow equation
+
+
+
+I studied the web course below and based on the course content, I use fortran to realize the arithmetic.
+[[https://www.youtube.com/playlist?list=PL30F4C5ABCE62CB61][Web course of Lorena A. Barba]]
+
+
+* CONCEPT
+$\frac{\partial \vec{v}}{\partial t}+(\vec{v}\cdot\nabla)\vec{v}=-\frac{1}{\rho}\nabla p + \nu \nabla^2\vec{v}$
+The details can be obtained both from the open course and any CFD books.
+
+* USAGE
+#+begin_example
+make channel_flow
+#+end_example
+
+After creating the corresponding txt file, use python program to create pictures. For example:
+#+begin_example
+./py_results_plot.py -d 3 -t c contour
+#+end_example

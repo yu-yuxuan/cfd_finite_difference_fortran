@@ -1,0 +1,21 @@
+#+TITLE:  solve 2d  diffusion equation
+
+
+
+I studied the web course below and based on the course content, I use fortran to realize the arithmetic.
+[[https://www.youtube.com/playlist?list=PL30F4C5ABCE62CB61][Web course of Lorena A. Barba]]
+
+
+* CONCEPT
+$\frac{\partial u}{\partial t}=\nu\frac{\partial^2 u}{\partial x^2}+\nu\frac{\partial^2 u}{\partial y^2}$
+The details can be obtained both from the open course and any CFD books.
+
+* USAGE
+#+begin_example
+make two_d_diffusion_FTCS
+#+end_example
+
+After creating the corresponding txt file, use python program to create pictures. For example:
+#+begin_example
+./py_results_plot.py -d 3 two_d_diffusion_ftcs_results.txt
+#+end_example

@@ -1,0 +1,15 @@
+#+TITLE: FORTRAN practice for the Fluid mechanics
+
+
+
+In my spare time, I studied the web course below and based on the course content, I use FORTRAN to realize the arithmetic. It is also a way to improve my FORTRAN skills. Welcome the corrections.
+[[https://www.youtube.com/playlist?list=PL30F4C5ABCE62CB61][Web course of Lorena A. Barba]]
+
+
+* CONCEPT
+The only thing is to solve the Navier-Stokes equations.
+$\frac{\partial \vec{v}}{\partial t}+(\vec{v}\cdot\nabla)\vec{v}=-\frac{1}{\rho}\nabla p + \nu \nabla^2\vec{v}$
+The details can be obtained both from the open course and any CFD books.
+
+* USAGE
+See each folder's README.org

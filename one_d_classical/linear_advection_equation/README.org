@@ -1,0 +1,26 @@
+#+TITLE: 6 classical ways to solve 1d linear advection equation
+
+
+
+I studied the web course below and based on the course content, I use fortran to realize the arithmetic.
+[[https://www.youtube.com/playlist?list=PL30F4C5ABCE62CB61][Web course of Lorena A. Barba]]
+
+
+* CONCEPT
+$\frac{\partial u}{\partial t}+c\frac{\partial u}{\partial x}=0$
+The details can be obtained both from the open course and any CFD books.
+
+* USAGE
+#+begin_example
+make one_d_linear_advection_BTCS
+make one_d_linear_advection_FTBS
+make one_d_linear_advection_FTCS
+make one_d_linear_advt_lax_fr
+make one_d_linear_advt_lax_wen
+make one_d_linear_advt_leapfrg_ftbs
+#+end_example
+
+After creating the corresponding txt file, use python program to create pictures. For example:
+#+begin_example
+./py_results_plot.py one_d_linear_advt_leapfrg_ftbs_results.txt
+#+end_example

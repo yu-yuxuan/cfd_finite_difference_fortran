@@ -1,0 +1,21 @@
+#+TITLE:   solve 2d linear advection equation
+
+
+
+I studied the web course below and based on the course content, I use fortran to realize the arithmetic.
+[[https://www.youtube.com/playlist?list=PL30F4C5ABCE62CB61][Web course of Lorena A. Barba]]
+
+
+* CONCEPT
+$\frac{\partial u}{\partial t}+c\frac{\partial u}{\partial x}+c\frac{\partial u}{\partial y}=0$
+The details can be obtained both from the open course and any CFD books.
+
+* USAGE
+#+begin_example
+make linear_advection_equation
+#+end_example
+
+After creating the corresponding txt file, use python program to create pictures. For example:
+#+begin_example
+./py_results_plot.py -d 3 two_d_linear_advection_FTBS_results.txt
+#+end_example
